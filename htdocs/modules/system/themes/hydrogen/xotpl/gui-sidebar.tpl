@@ -15,7 +15,7 @@
             </li>
             <{foreach item=menu from=$hydrogen.currentModule.menu}>
                 <li class="currents <{if $menu.options}> menu<{/if}><{if $menu.location && $menu.location==$hydrogen.location}> current-menu<{/if}>">
-                    <a href="<{menuLink menu=$menu module=$hydrogen.currentModule.dirname}>">
+                    <a href="<{link menu=$menu module=$hydrogen.currentModule.dirname}>">
                         <{xoicon icon=$menu.icon}>
                         <span class="caption"><{$menu.title}></span>
                     </a>
@@ -23,7 +23,7 @@
                         <ul class="nav-menu">
                             <{foreach item=submenu from=$menu.options}>
                                 <li>
-                                    <a href="<{menulink menu=$submenu module=$hydrogen.currentModule.dirname}>">
+                                    <a href="<{link menu=$submenu module=$hydrogen.currentModule.dirname}>">
                                         <{$submenu.title}>
                                     </a>
                                 </li>
@@ -50,7 +50,7 @@
                         <ul class="nav-menu">
                             <{foreach item=menu from=$module.menu}>
                                 <li>
-                                    <a href="<{menulink menu=$menu module=$module.dirname}>">
+                                    <a href="<{link menu=$menu module=$module.dirname}>">
                                         <{$menu.title}>
                                     </a>
                                 </li>
@@ -76,7 +76,7 @@
                     <ul class="nav-menu">
                         <{foreach item=menu from=$module.menu}>
                             <li>
-                                <a href="<{menulink menu=$menu module=$module.dirname}>">
+                                <a href="<{link menu=$menu module=$module.dirname}>">
                                     <{$menu.title}>
                                 </a>
                             </li>

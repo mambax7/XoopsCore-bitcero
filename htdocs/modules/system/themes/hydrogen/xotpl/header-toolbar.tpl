@@ -24,7 +24,7 @@
                 <ul class="dropdown-menu">
                     <{foreach item=menu from=$hydrogen.systemMenu}>
                     <li>
-                        <a href="<{menulink menu=$menu module='system'}>">
+                        <a href="<{link menu=$menu module='system'}>">
                             <{xoicon icon="<{$menu.icon}>"}>
                             <{$menu.title}>
                         </a>

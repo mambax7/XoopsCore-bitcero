@@ -73,12 +73,12 @@ $modversion['links'] = array(
     'twitter'   => array(
         'icon'      => 'fa fa-twitter',
         'url'       => 'http://www.twitter.com/xoops',
-        'caption'   => __('Twitter', 'system')
+//        'caption'   => __('Twitter', 'system')
     ),
     'facebook'   => array(
         'icon'      => 'fa fa-facebook',
         'url'       => 'http://www.facebook.com/xoops',
-        'caption'   => __('Facebook', 'system')
+//        'caption'   => __('Facebook', 'system')
     )
 );
 
